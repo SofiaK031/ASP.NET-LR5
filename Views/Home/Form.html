@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+    <div class="form-container">
+        <form method="post" action="/test">
+            <label>Value:</label>
+            <input type="text" name="myValue" id="val" required />
+            <br />
+            <br />
+            <label>Date and time:</label>
+            <input type="datetime-local" name="myDateTime" id="date-time" required />
+            <br />
+            <br />
+            <input type="submit" value="Enter" class="my-btn" />
+            <h3>
+                <a href="/cookies">View cookies</a>
+            </h3>
+        </form>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .form-container {
+        margin: 20px auto 20px;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .my-btn {
+        background: #98FB98;
+        font-size: 16px;
+        border: 2px black solid;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    #val, #date-time {
+        padding: 5px;
+    }
+</style>
